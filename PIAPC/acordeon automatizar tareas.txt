@@ -1,0 +1,3 @@
+$variable = New-ScheduledTaskAction -Execute "PowerShell.exe" -Argument "-File C:(RUTA HASTA EL ARCHIVO)"
+$trigger = New-ScheduledTasktrigger -Once -At (HORA ESTABLECIDA)
+Register-Scheduled Task -Action $variable -Trigger $trigger -TaskPath "(Nombre de carpeta)" -TaskName "(Nombre de la tarea)" -Description "(Descripcion de tarea)"
